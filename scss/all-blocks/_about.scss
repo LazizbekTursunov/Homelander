@@ -1,0 +1,109 @@
+.about {
+
+    margin-top: 200px;
+
+    .container {
+        display: flex;
+        background: url("../../imges/About_Desktop.png") no-repeat;
+        max-width: 1111px;
+        width: 100%;
+        height: 196px;
+        border-radius: 10px;
+        padding: 20px;
+        background-size: cover;
+        color: var(--color-Grey);
+        margin-bottom: 500px;
+    }
+
+    &__div {
+        margin-top: 110px;
+    }
+
+    &__div + &__div {
+        margin-left: 20px;
+    }
+
+    &__heading {
+        color: var(--color-Blue);
+        text-align: center;
+        font-family: "Fraunces";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 32px;
+    }
+
+    &__text {
+        width: 255px;
+        color: var(--color-Blue);
+        text-align: center;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+}
+
+
+@media only screen and (max-width: 689px) {
+    .about .container {
+        background-image: url("../../imges/About_Tablet.png");
+        max-width: 689px;
+        width: 100%;
+        height: 118px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        margin-bottom: 1290px;   
+    }
+
+    .about__div {
+        display: flex;
+        align-items: center;
+    }
+
+    .about__info {
+        // display: flex;
+        text-align: center;
+    }
+
+    .about__heading {
+        margin-left: 10px;
+    }
+
+    .about__text {
+        font-size: 15px;
+        line-height: 25px;
+        margin-left: 29px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .about .container {
+        max-width: 375px;
+        width: 100%;
+        background-image: url("../../imges/About_Mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 72px;
+        margin-bottom: 1700px;
+    }
+
+    .about__img {
+        width: 200px;
+        height: 151px;
+    }
+
+    .about__div {
+        display: block;
+        text-align: center;
+    }
+
+    .about__info {
+        flex-direction: column; 
+        margin-left: -15px;
+    }
+
+}

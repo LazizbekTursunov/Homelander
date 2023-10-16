@@ -1,0 +1,210 @@
+.homelander {
+    .container {
+        background-color: var(--color-Blue);
+        max-width: 1280px;
+        width: 100%;
+        height: 557px;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__heading {
+        color: var(--color-Light);
+        text-align: center;
+        font-family: "Fraunces";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px;
+        padding-top: 112px;
+    }
+
+    &__text {
+        width: 540px;
+        color: var(--color-Light);
+        text-align: center;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        opacity: 0.7;
+        margin-left: 350px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item + &__item {
+        margin-left: 30px;
+    }
+
+    &__item {
+        width: 350px;
+        height: 382px;
+        border-radius: 8px;
+        background: var(--color-Cyan);
+        text-align: center;
+        padding-top: 72px;
+        margin-left: 20px;
+    }
+
+    &__img {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        width: 255px;
+        color: var(--color-Light);
+        text-align: center;
+        font-family: "Fraunces";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 32px;
+        margin-left: 47px;
+        margin-bottom: 24px;
+    }
+
+    &__paragraph {
+        width: 255px;
+        color: var(--color-Light);
+        text-align: center;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin-left: 47px;
+    }
+}
+
+@media only screen and (max-width: 913px){
+    .homelander__list{
+        margin-left: -200px;
+    }
+}
+
+@media only screen and (max-width: 689px) {
+    .homelander .container {
+        background-color: var(--color-Blue);
+        height: 573px;
+        max-width: 689px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homelander__heading {
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .homelander__text {
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        line-height: 25px;
+        margin-left: -1px;
+    }
+
+    .homelander__list {
+        flex-direction: column;
+        padding-top: 70px;
+        margin-left: -25px;
+    }
+
+    .homelander__item {
+        width: 573px;
+        height: 180px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: #0E8784;
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .homelander__item + .homelander__item {
+        margin-top: 30px;
+    }
+
+    .homelander__img {
+        width: 56px;
+        height: 56px;
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+
+    .homelander__title {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+    }
+
+    .homelander__paragraph {
+        width: 344px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-left: 20px;
+    }
+
+    .picture {
+        height: 39px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .homelander .container {
+        width: 327px;
+        height: 902px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .homelander__heading {
+        width: 279px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .homelander__text {
+        width: 279px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .homelander__list {
+        flex-direction: column;
+        margin-left: -55px;
+    }
+
+    .homelander__item {
+        width: 279px;
+        height: 382px;
+        flex-direction: column;
+    }
+
+    .homelander__img {
+        margin-left: 110px;
+    }
+
+    .homelander__title {
+        width: 255px;
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: -1px;
+    }
+
+    .homelander__paragraph {
+        width: 212px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

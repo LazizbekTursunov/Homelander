@@ -1,0 +1,79 @@
+.footer{
+    background-color: #2C343E;
+    width: 100%;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer__logo{
+    padding: 45px 0px;
+}
+
+.navber__list{
+    display: flex;
+    align-items: center;
+}
+
+.navber__item + .navber__item{
+    padding-left: 33px;
+}
+
+.navber__link{
+    color: #83888F;
+    font-family: "Barlow";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; 
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover{
+        color: black;
+    }
+}
+
+.navber__schedule{
+    display: flex;
+    align-items: center;
+}
+
+.navber__chart{
+    padding-left: 24px;
+}
+
+svg:hover{
+    fill: yellowgreen;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 760px){
+    .footer .container{
+        flex-direction: column;        
+    }
+
+    .navber__list{
+        margin-bottom: 65px;
+    }
+
+    .navber__schedule{
+        margin-bottom: 54px;
+        margin-left: -100px;
+    }    
+    
+}
+
+@media only screen and (max-width: 360px){
+    .navber__list{
+        flex-direction: column;
+    }
+
+    .navber__link{
+        text-align: start;
+    }
+}
